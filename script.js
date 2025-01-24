@@ -25,7 +25,7 @@ openCardButton.addEventListener("click", () => {
     document.getElementById("card").style.display = "none";
     messageBox.style.display = "block";
     openCardButton.style.display = "none";
-    
+    audioPlayer.play()
     
     // Chọn câu chúc ngẫu nhiên
     const randomMessage = messages[Math.floor(Math.random() * messages.length)];
