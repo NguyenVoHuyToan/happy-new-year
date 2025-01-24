@@ -17,6 +17,7 @@ const openCardButton = document.getElementById("openCardButton");
 const messageBox = document.getElementById("messageBox");
 const messageElement = document.getElementById("message");
 const fallingFlowers = document.getElementById("fallingFlowers");
+const audioPlayer = document.getElementById('audioPlayer');
 
 // Sự kiện khi nhấn nút "Chúc Mừng Năm Mới"
 openCardButton.addEventListener("click", () => {
