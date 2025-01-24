@@ -32,7 +32,9 @@ openCardButton.addEventListener("click", () => {
     messageElement.textContent = randomMessage;
     // Hiệu ứng hoa mai rơi
     createFallingFlowers();
+    audioPlayer.play()
 });
+
 
 // Hàm tạo hiệu ứng hoa mai rơi
 function createFallingFlowers() {
