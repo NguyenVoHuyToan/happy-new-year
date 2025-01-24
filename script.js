@@ -25,14 +25,13 @@ openCardButton.addEventListener("click", () => {
     document.getElementById("card").style.display = "none";
     messageBox.style.display = "block";
     openCardButton.style.display = "none";
-
-
+    
+    
     // Chọn câu chúc ngẫu nhiên
     const randomMessage = messages[Math.floor(Math.random() * messages.length)];
     messageElement.textContent = randomMessage;
     // Hiệu ứng hoa mai rơi
     createFallingFlowers();
-    audioPlayer.play()
 });
 
 
