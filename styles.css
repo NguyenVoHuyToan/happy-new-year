@@ -1,0 +1,180 @@
+body {
+  font-family: Arial, sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background-image: url("https://khoinguonsangtao.vn/wp-content/uploads/2022/12/background-chuc-mung-nam-moi.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  overflow: hidden;
+}
+
+.card {
+  width: 400px;
+  height: 300px;
+  background-image: url("https://lh4.googleusercontent.com/WQP__186SqVCWntmDyyPGeD_F0dMwGg4oal6qFCbvsEujH1dMLC2o2Jsf7YcK4i8-p_QKieRj_ISUumAYnTQAukbnYc-Ghq--kFDgGxRHWTn3slgNp9q1_D6R1E4UM_KphVO_SnXx_fl9tbYL5Os1-L1IjBuH7e7veKYobJ0JRp667c2NnsDRpyJADA6AQ");
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+}
+
+.open-card-button {
+  background-color: #ff6600;
+  color: white;
+  border: none;
+  margin-top: 20px;
+  padding: 15px;
+  font-size: 18px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.open-card-button:hover {
+  background-color: #ff4500;
+}
+
+.message-box {
+  text-align: center;
+  padding: 20px;
+  width: 80%;
+  max-width: 400px;
+  display: none;
+}
+
+.greeting-card {
+  width: 100%;
+  max-width: 400px;
+  height: 300px;
+  background-image: url("https://thiep.softvn.com/data/cards/99212935/99212935_638062658399212935.png"); /* Thay ảnh nền ở đây */
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 10px;
+  padding: 20px;
+  color: white;
+  font-size: 24px;
+  text-align: center;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+}
+
+.text {
+  color: red;
+  text-align: center;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.message {
+  margin-left: 40px;
+}
+
+.flower {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  background-image: url("https://tse3.mm.bing.net/th?id=OIP.jjnPnEm0PZQNt6ksSKOgZAHaHa&pid=Api&P=0&h=220");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: transparent;
+  border-radius: 50%;
+  opacity: 0;
+  animation: flower-fall 3s ease-out infinite;
+}
+
+@keyframes flower-fall {
+  0% {
+    top: -30px;
+    opacity: 1;
+    transform: translateX(0);
+  }
+  100% {
+    top: 100vh;
+    opacity: 0;
+    transform: translateX(calc(100px * (2 * (0.5 - random()))));
+  }
+}
+
+@keyframes flower-fall-alternate {
+  0% {
+    top: -30px;
+    opacity: 1;
+    transform: translateX(0);
+  }
+  100% {
+    top: 100vh;
+    opacity: 0;
+    transform: translateX(20px);
+  }
+}
+
+@media screen and (max-width: 768px) {
+  body {
+    background-image: url("https://thiep.softvn.com/data/cards/28120637/28120637_638073848249785552.png");
+    background-size: cover;
+  }
+  .card {
+    width: 500px;
+    height: 350px;
+    margin-top: 400px;
+  }
+
+  .message-box {
+    margin-top: 450px;
+  }
+  .greeting-card {
+    width: 100%;
+    max-width: 500px;
+    height: 350px;
+  }
+  .text {
+    color: red;
+    font-size: 20px;
+    font-weight: bold;
+    margin: 0;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  body {
+    background-image: url("https://cellphones.com.vn/sforum/wp-content/uploads/2022/12/hinh-nen-powerpoint-tet-14-3.png");
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+  }
+  .message-box {
+    margin: 0;
+    padding: 0;
+  }
+  .card {
+    margin: 0;
+    width: 350px;
+    height: 250px;
+  }
+  .open-card-button {
+    font-size: 12px;
+  }
+
+  .greeting-card {
+    width: 100%;
+    max-width: 300px;
+    height: 200px;
+  }
+
+  .text {
+    color: #fff;
+    font-size: 20px;
+    font-weight: bold;
+    margin-left: 10px;
+  }
+  .message {
+    margin: 10px;
+  }
+}
