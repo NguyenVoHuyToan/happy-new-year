@@ -24,6 +24,7 @@ openCardButton.addEventListener("click", () => {
     // Ẩn tấm thiệp và hiển thị câu chúc
     document.getElementById("card").style.display = "none";
     messageBox.style.display = "block";
+    messageBox.classList.toggle('active')
     openCardButton.style.display = "none";
     audioPlayer.play()
     
