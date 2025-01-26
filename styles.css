@@ -63,7 +63,7 @@ body {
   font-size: 24px;
   text-align: center;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
-  animation: fadeIn 3s ease;
+  animation: bounce 2s infinite;
 }
 
 .text {
@@ -90,12 +90,15 @@ body {
   animation: flower-fall 3s ease-out infinite;
 }
 
-@keyframes fadeIn {
-  0% {
-      opacity: 0;
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0);
   }
-  100% {
-      opacity: 1;
+  40% {
+    transform: translateY(-30px);
+  }
+  60% {
+    transform: translateY(-15px);
   }
 }
 
