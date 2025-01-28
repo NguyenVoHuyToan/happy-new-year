@@ -18,6 +18,17 @@ const messageBox = document.getElementById("messageBox");
 const messageElement = document.getElementById("message");
 const fallingFlowers = document.getElementById("fallingFlowers");
 const audioPlayer = document.getElementById('audioPlayer');
+// const onloadAudio = document.getElementById('onloadAudio');
+
+window.onload = function() {
+    const onloadAudio = document.getElementById('onloadAudio');
+    onloadAudio.play(); // Phát nhạc khi trang đã tải xong
+};
+
+function playMusic() {
+    const onloadAudio = document.getElementById('onloadAudio');
+    onloadAudio.play();
+}
 
 // Sự kiện khi nhấn nút "Chúc Mừng Năm Mới"
 openCardButton.addEventListener("click", () => {

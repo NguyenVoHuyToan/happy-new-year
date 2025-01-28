@@ -5,14 +5,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Thiệp Chúc Mừng Năm Mới</title>
     <link rel="stylesheet" href="styles.css" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
   </head>
   <body>
+    <audio id ="onloadAudio" autoplay>
+      <source src="./assets/Tieng-trong-mua-lan-www_nhacchuongvui_com.mp3" type="audio/mp3">
+    </audio>
+    <div class="header">
+      <marquee behavior="scroll" direction="left">
+        <h1>Mừng Xuân Ất Tị - 2025 <img src="https://png.pngtree.com/png-vector/20240921/ourlarge/pngtree-3d-cute-little-snake-use-lantern-png-image_13882528.png" alt="icon"/></h1>
+      </marquee>
+    </div>
     <div id="card" class="card"></div>
     <audio id ="audioPlayer">
       <source src="./assets/Nhac-Chuong-Nam-Qua-Da-Lam-Gi-Noo-Phuoc-Thinh.mp3" type="audio/mp3">
     </audio>
     <button id="openCardButton" class="open-card-button">
       Bấm Để Nhận Lời Chúc Nhé!
+    </button>
+    <button class="play-music" onclick="playMusic()">
+      <i class="fa-solid fa-play"></i>
     </button>
     <div id="messageBox" class="message-box" style="display: none">
       <div class="greeting-card"></div>

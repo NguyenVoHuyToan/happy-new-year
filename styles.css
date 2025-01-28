@@ -12,6 +12,28 @@ body {
   overflow: hidden;
 }
 
+.header{
+  max-width: 500px;
+  
+  margin: 20px;
+}
+
+.header h1{
+  font-size: 32px;
+  font-weight: 600;
+  line-height: 2px;
+  color: #ff6600;
+}
+
+.header img{
+  width: 50px;
+  border-radius: 50%;
+  position: absolute;
+  top: -25px;
+
+  margin-left: 10px;
+}
+
 .card {
   width: 400px;
   height: 300px;
@@ -23,7 +45,7 @@ body {
   justify-content: center;
   align-items: center;
   position: relative;
-  box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 0 15px rgba(111, 100, 100, 0.3);
 }
 
 .open-card-button {
@@ -40,6 +62,18 @@ body {
 
 .open-card-button:hover {
   background-color: #ff4500;
+}
+
+
+.play-music{
+  width: 50px;
+  height: 50px;
+  margin-top: 20px;
+  border: none;
+  outline: none;
+  border-radius: 50%;
+  background-color: #fff;
+
 }
 
 .message-box {
@@ -133,6 +167,9 @@ body {
     background-image: url("https://thiep.softvn.com/data/cards/28120637/28120637_638073848249785552.png");
     background-size: cover;
   }
+  .header h1{
+    font-size: 36px;
+  }
   .card {
     width: 500px;
     height: 350px;
@@ -162,6 +199,11 @@ body {
     display: flex;
     flex-direction: column;
   }
+  .header h1{
+    font-size: 38px;
+    color: rgb(240, 211, 49);
+  }
+
   .message-box {
     margin: 0;
     padding: 0;
