@@ -18,15 +18,14 @@ const messageBox = document.getElementById("messageBox");
 const messageElement = document.getElementById("message");
 const fallingFlowers = document.getElementById("fallingFlowers");
 const audioPlayer = document.getElementById('audioPlayer');
-// const onloadAudio = document.getElementById('onloadAudio');
+const onloadAudio = document.getElementById('onloadAudio');
+const buttonMusic = document.getElementById('music');
 
 window.onload = function() {
-    const onloadAudio = document.getElementById('onloadAudio');
     onloadAudio.play(); // Phát nhạc khi trang đã tải xong
 };
 
 function playMusic() {
-    const onloadAudio = document.getElementById('onloadAudio');
     onloadAudio.play();
 }
 
@@ -38,6 +37,8 @@ openCardButton.addEventListener("click", () => {
     messageBox.classList.toggle('active')
     openCardButton.style.display = "none";
     audioPlayer.play()
+    buttonMusic.style.display = "none";
+    onloadAudio.pause()
     
     // Chọn câu chúc ngẫu nhiên
     const randomMessage = messages[Math.floor(Math.random() * messages.length)];
