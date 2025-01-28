@@ -9,7 +9,13 @@ const messages = [
     "Chúc bạn và gia đình một năm mới an khang thịnh vượng, gia đình hạnh phúc trọn vẹn yêu thương.",
     "Chúc xuân như ý, nhà nhà ấm no, mỗi ngày một phúc, mỗi giờ thêm vui.",
     "Cả năm tiền bạc dồi dào, công việc hanh thông, thành công rực rỡ.",
-    
+    "Năm 2025, chúc bạn: 1 năm mới, 1 tuổi mới, nhiều bạn mới, nhiều hiểu biết mới, mãi mãi hạnh phúc bên gia đình và những người thân yêu nhất nhé.",
+    "Tết đến, tiễn biệt năm cũ, đón chào năm mới với gia đình sung túc, ông bà hưởng phúc, cha mẹ mạnh khỏe.",
+    "Chúc mừng năm mới Ất Tỵ 2025! Chúc bạn gặp nhiều may mắn, vạn sự hanh thông, gia đình ấm áp, tràn đầy tiếng cười.",
+    "Chúc bạn năm mới 2025 sự nghiệp thăng tiến, tài lộc dồi dào và mọi ước mơ đều trở thành hiện thực.",
+    "Nhân dịp năm mới Ất Tỵ 2025, chúc bạn luôn mạnh khỏe, hạnh phúc và đạt được mọi ước nguyện trong cuộc sống. Hãy cùng nhau đạt những thành tựu mới trong công việc.",
+    "Hy vọng mọi kế hoạch và dự định công việc của bạn trong năm mới sẽ diễn ra suôn sẻ và đạt được thành công ngoài mong đợi.",
+    "Chúc cho những điều tốt đẹp nhất sẽ luôn đồng hành với bạn trong năm mới. May mắn sẽ mỉm cười với mọi bước đi của bạn.",
 ];
 
 // Lấy các phần tử
@@ -21,9 +27,9 @@ const audioPlayer = document.getElementById('audioPlayer');
 const onloadAudio = document.getElementById('onloadAudio');
 const buttonMusic = document.getElementById('music');
 
-window.onload = function() {
-    onloadAudio.play(); // Phát nhạc khi trang đã tải xong
-};
+// window.onload = function() {
+//     onloadAudio.play(); // Phát nhạc khi trang đã tải xong
+// };
 
 function playMusic() {
     onloadAudio.play();

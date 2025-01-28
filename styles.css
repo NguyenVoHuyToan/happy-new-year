@@ -6,6 +6,7 @@ body {
   align-items: center;
   height: 100vh;
   margin: 0;
+  padding: 0;
   background-image: url("https://khoinguonsangtao.vn/wp-content/uploads/2022/12/background-chuc-mung-nam-moi.jpg");
   background-size: cover;
   background-repeat: no-repeat;
@@ -13,8 +14,8 @@ body {
 }
 
 .header{
-  max-width: 500px;
-  
+  max-width: 300px;
+  text-align: center;
   margin: 20px;
 }
 
@@ -87,7 +88,7 @@ body {
 .greeting-card {
   width: 100%;
   max-width: 400px;
-  height: 300px;
+  height: 280px;
   background-image: url("https://thiep.softvn.com/data/cards/99212935/99212935_638062658399212935.png"); /* Thay ảnh nền ở đây */
   background-size: cover;
   background-repeat: no-repeat;
@@ -105,6 +106,11 @@ body {
   text-align: center;
   font-size: 24px;
   font-weight: bold;
+}
+
+.footer{
+  margin-left: 50px;
+  color:rgb(197, 60, 60)
 }
 
 .message {
@@ -167,22 +173,24 @@ body {
     background-image: url("https://thiep.softvn.com/data/cards/28120637/28120637_638073848249785552.png");
     background-size: cover;
   }
+
   .header h1{
-    font-size: 36px;
+    font-size: 48px;
+    color: rgb(248, 44, 44);
   }
   .card {
     width: 500px;
     height: 350px;
-    margin-top: 400px;
+    margin-top: 350px;
   }
 
   .message-box {
-    margin-top: 450px;
+    margin-top: 350px;
   }
   .greeting-card {
     width: 100%;
     max-width: 500px;
-    height: 350px;
+    height: 300px;
   }
   .text {
     color: red;
@@ -199,9 +207,17 @@ body {
     display: flex;
     flex-direction: column;
   }
+  .header {
+    margin: 30px;
+  }
+
   .header h1{
-    font-size: 38px;
+    font-size: 36px;
     color: rgb(240, 211, 49);
+  }
+
+  .header img{
+    display: none;
   }
 
   .message-box {
@@ -228,6 +244,11 @@ body {
     font-size: 20px;
     font-weight: bold;
     margin-left: 10px;
+  }
+
+  .footer{
+    margin: 0;
+    color: #fff
   }
   .message {
     margin: 10px;
